@@ -16,7 +16,7 @@
         <div class="h-full bg-gray-200 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
 
           <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">BLOG</h2>
-          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">{{ blog_all.title }}</h1>
+          <a href="{% url 'blog:detail' blog_all.id %}"><h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">{{ blog_all.title }}</h1></a>
           <p class="leading-relaxed mb-3">{{ blog_all.description }}</p>
           {{ blog_all.date }}
           <a class="text-indigo-500 inline-flex items-center">More
